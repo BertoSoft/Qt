@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>listHorasEmpleados</class>
+ <widget class="QDialog" name="listHorasEmpleados">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1204</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="cmdVolver">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>520</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/volver.png</normaloff>:/imagenes/volver.png</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmExportarDatos</class>
+ <widget class="QDialog" name="frmExportarDatos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1062</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Imagenes.qrc">
+    <normaloff>:/imagenes/cargadora3.jpeg</normaloff>:/imagenes/cargadora3.jpeg</iconset>
+  </property>
+  <widget class="QPushButton" name="cmdExportar">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>550</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exportar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/exportar.jpeg</normaloff>:/imagenes/exportar.jpeg</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdVolver">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>550</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/volver.png</normaloff>:/imagenes/volver.png</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

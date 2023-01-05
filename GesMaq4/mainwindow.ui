@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1199</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Imagenes.qrc">
+    <normaloff>:/imagenes/cargadora3.jpeg</normaloff>:/imagenes/cargadora3.jpeg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1199</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionImportar_Datos"/>
+    <addaction name="actionExportar_Datos"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuRegistros">
+    <property name="title">
+     <string>Registros</string>
+    </property>
+    <addaction name="actionRegistro_de_Empleados"/>
+    <addaction name="actionRegistro_de_Centros_de_Trabajo"/>
+    <addaction name="actionRegistro_de_M_quinas"/>
+    <addaction name="actionRegistro_de_Operaciones_de_Mantenimiento"/>
+    <addaction name="actionAver_as"/>
+    <addaction name="actionRegistro_de_Precios_Combustible"/>
+    <addaction name="actionRegistro_de_Tarifas_de_las_M_quina"/>
+   </widget>
+   <widget class="QMenu" name="menuGesti_n">
+    <property name="title">
+     <string>Gestión Diaria</string>
+    </property>
+    <addaction name="actionGesti_n_Diaria_de_Partes_de_Trabajo"/>
+    <addaction name="actionRepostajes"/>
+    <addaction name="actionMantenimiento"/>
+   </widget>
+   <widget class="QMenu" name="menuAvios">
+    <property name="title">
+     <string>Avisos</string>
+    </property>
+    <addaction name="actionBuzn_de_Tareas_Pendientes"/>
+   </widget>
+   <widget class="QMenu" name="menuAcerca_De">
+    <property name="title">
+     <string>Acerca De...</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFacturaci_n">
+    <property name="title">
+     <string>Facturación</string>
+    </property>
+    <widget class="QMenu" name="menuIngresos">
+     <property name="title">
+      <string>Ingresos</string>
+     </property>
+     <addaction name="actionListado_de_Horas_Por_Empleado"/>
+     <addaction name="actionListado_de_Horas_Por_Maquina"/>
+     <addaction name="actionListado_Horas_Por_Centro_de_Trabajo"/>
+    </widget>
+    <widget class="QMenu" name="menuGastos_2">
+     <property name="title">
+      <string>Gastos</string>
+     </property>
+     <addaction name="actionListado_de_Gastos_Por_Maquina"/>
+    </widget>
+    <addaction name="menuIngresos"/>
+    <addaction name="menuGastos_2"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuRegistros"/>
+   <addaction name="menuGesti_n"/>
+   <addaction name="menuFacturaci_n"/>
+   <addaction name="menuAvios"/>
+   <addaction name="menuAcerca_De"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSalir"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionImportar_Datos"/>
+   <addaction name="actionExportar_Datos"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionRegistro_de_Empleados"/>
+   <addaction name="actionRegistro_de_Centros_de_Trabajo"/>
+   <addaction name="actionRegistro_de_M_quinas"/>
+   <addaction name="actionRegistro_de_Operaciones_de_Mantenimiento"/>
+   <addaction name="actionRegistro_de_Precios_Combustible"/>
+   <addaction name="actionRegistro_de_Tarifas_de_las_M_quina"/>
+   <addaction name="actionAver_as"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionGesti_n_Diaria_de_Partes_de_Trabajo"/>
+   <addaction name="actionRepostajes"/>
+   <addaction name="actionMantenimiento"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionListado_de_Horas_Por_Empleado"/>
+   <addaction name="actionListado_de_Horas_Por_Maquina"/>
+   <addaction name="actionListado_Horas_Por_Centro_de_Trabajo"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionListado_de_Gastos_Por_Maquina"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionBuzn_de_Tareas_Pendientes"/>
+  </widget>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/Cerrar.png</normaloff>:/imagenes/Cerrar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionImportar_Datos">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/importarDatos.jpeg</normaloff>:/imagenes/importarDatos.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Importar Datos</string>
+   </property>
+  </action>
+  <action name="actionExportar_Datos">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/ExportarDatos.jpeg</normaloff>:/imagenes/ExportarDatos.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Exportar Datos</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_Empleados">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/empleado.jpeg</normaloff>:/imagenes/empleado.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Empleados</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_Centros_de_Trabajo">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/fabrica.png</normaloff>:/imagenes/fabrica.png</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Centros de Trabajo</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_M_quinas">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/maquina.jpeg</normaloff>:/imagenes/maquina.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Máquinas</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_Operaciones_de_Mantenimiento">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/mantenimiento.jpeg</normaloff>:/imagenes/mantenimiento.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Operaciones de Mantenimiento...</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_Precios_Combustible">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/preciosGasoil.jpeg</normaloff>:/imagenes/preciosGasoil.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Precios Combustible</string>
+   </property>
+  </action>
+  <action name="actionRegistro_de_Tarifas_de_las_M_quina">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/horas_maquinas.jpeg</normaloff>:/imagenes/horas_maquinas.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Registro de Tarifas de las Máquinas</string>
+   </property>
+  </action>
+  <action name="actionGesti_n_Diaria_de_Partes_de_Trabajo">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/diario.png</normaloff>:/imagenes/diario.png</iconset>
+   </property>
+   <property name="text">
+    <string>Partes de Trabajo</string>
+   </property>
+  </action>
+  <action name="actionRepostajes">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/surtidor.jpeg</normaloff>:/imagenes/surtidor.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Repostajes</string>
+   </property>
+  </action>
+  <action name="actionMantenimiento">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/engranaje.jpeg</normaloff>:/imagenes/engranaje.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Mantenimiento</string>
+   </property>
+  </action>
+  <action name="actionAver_as">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/averia.png</normaloff>:/imagenes/averia.png</iconset>
+   </property>
+   <property name="text">
+    <string>Registro De Averías</string>
+   </property>
+  </action>
+  <action name="actionListado_de_Horas_Por_Empleado">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/horas_empleado.png</normaloff>:/imagenes/horas_empleado.png</iconset>
+   </property>
+   <property name="text">
+    <string>Listado de Horas Por Empleado</string>
+   </property>
+  </action>
+  <action name="actionListado_de_Horas_Por_Maquina">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/reloj.jpeg</normaloff>:/imagenes/reloj.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Listado de Horas Por Maquina</string>
+   </property>
+  </action>
+  <action name="actionListado_Horas_Por_Centro_de_Trabajo">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/horas_empresas.jpeg</normaloff>:/imagenes/horas_empresas.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Listado Horas Por Centro de Trabajo</string>
+   </property>
+  </action>
+  <action name="actionListado_de_Gastos_Por_Maquina">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/Gastos.png</normaloff>:/imagenes/Gastos.png</iconset>
+   </property>
+   <property name="text">
+    <string>Listado de Gastos Por Maquina</string>
+   </property>
+  </action>
+  <action name="actionBuzn_de_Tareas_Pendientes">
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/buzon.png</normaloff>:/imagenes/buzon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Buzon de Tareas Pendientes</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmCalendario</class>
+ <widget class="QDialog" name="frmCalendario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>791</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCalendarWidget" name="calCalendario">
+      <property name="verticalHeaderFormat">
+       <enum>QCalendarWidget::NoVerticalHeader</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="cmdGuardar">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>490</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Terminar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/aceptar.jpeg</normaloff>:/imagenes/aceptar.jpeg</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdVolver">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>540</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Imagenes.qrc">
+     <normaloff>:/imagenes/volver.png</normaloff>:/imagenes/volver.png</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
